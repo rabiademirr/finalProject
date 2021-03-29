@@ -1,0 +1,17 @@
+RewriteEngine on
+
+
+
+#Seo url oluşturma
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php
+
+#404 hata sayfası yönlendirme kodu
+#ErrorDocument 404 http://localhost:8080/finalProject
+
+RewriteRule ^page-([0-9a-zA-Z-_]+)  menuDetail.php?sef=$1 [L,QSA]
+RewriteRule ^categories-([0-9a-zA-Z-_]+)  categories.php?sef=$1 [L,QSA]
+RewriteRule ^product-([0-9a-zA-Z-_]+)-([0-9]+)$  productDetail.php?sef=$1&product_id=$2 [L,QSA]
+
+
