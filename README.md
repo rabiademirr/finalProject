@@ -16,6 +16,7 @@ Lively Garden bir e-ticaret sitesidir.Bu proje Kodluyoruz&Vivense PHP Talent Boo
 -Ayar ekleme,güncelleme,silme
 -Ürün ekleme, silme, güncelleme
 -Kategori ekleme,güncelleme,silme
+-Menü işlemleri
 -Kullanıcı görüntüleme ,listeleme,düzenleme
 -Sipariş Görüntüleme 
 -Yorum kontrolleri
@@ -27,7 +28,7 @@ Lively Garden bir e-ticaret sitesidir.Bu proje Kodluyoruz&Vivense PHP Talent Boo
 
 -Üye olma 
 -Sipariş oluşturma
--Ürün listeleme, arama,sepete ekleme
+-Ürün listeleme, arama ,sepete ekleme
 -Yorum yapma
 -Ödeme yapma 
 -Mail gönderme
