@@ -1453,6 +1453,34 @@ if ($_GET['productCartDelete']=="ok") {
 
 }
 
+if ($_GET['product_standout']=="ok") {
+
+  
+  $edit=$db->prepare("UPDATE product SET
+    
+    product_standout=:product_standout
+    
+    WHERE product_id={$_GET['product_id']}");
+  
+  $update=$edit->execute(array(
+
+    'product_standout' => $_GET['product_forward']
+    ));
+
+
+
+  if ($update) {
+
+    
+
+    Header("Location:../production/product.php?status=ok");
+
+  } else {
+
+    Header("Location:../production/product.php?status=no");
+  }
+
+}
 
 
 

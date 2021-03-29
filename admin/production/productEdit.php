@@ -173,7 +173,7 @@ $getProduct=$askProduct->fetch(PDO::FETCH_ASSOC);
 
 
 
-                  <option value="0" <?php if ($getProduct['product_standout']==0) { echo 'selected=""'; } ?>>Öne Çıkarma</option>
+                  <option value="0" <?php if ($getProduct['product_standout']== '0') { echo 'selected="" :' ; } ?>>Öne Çıkarma</option>
 
 
                  </select>

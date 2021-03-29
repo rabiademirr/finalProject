@@ -80,24 +80,23 @@ $askProduct->execute(array());
                  <td><?php echo $getProduct['product_price'] ?></td>
                
 
-                 <td><center><?php 
+             
+              <td><center><?php 
 
-                  if ($getProduct['product_status']==1) {?>
+                       if ($getProduct['product_standout']==0) {?>
 
-                  <button class="btn btn-success btn-xs">Aktif</button>
-
-
-                <?php } else {?>
-
-                <button class="btn btn-danger btn-xs">Pasif</button>
+                       <a href="../operation/operation.php?product_id=<?php echo $getProduct['product_id'] ?>&product_forward=1&product_standout=ok"><button class="btn btn-success btn-xs">Öne Çıkar</button></a>
 
 
-                <?php } ?>
-              </center>
+                       <?php } elseif ($getProduct['product_standout']==1) {?>
 
 
-            </td>
+                       <a href="../operation/operation.php?product_id=<?php echo $getProduct['product_id'] ?>&product_forward=0&product_standout=ok"><button class="btn btn-warning btn-xs">Öne Çıkarma</button></a>
 
+                       <?php } ?>
+
+
+                     </center></td>
 
             <td><center><a href="productEdit.php?product_id=<?php echo $getProduct['product_id']; ?>"><button class="btn btn-primary btn-xs">Düzenle</button></a></center></td>
             <td><center><a href="../operation/operation.php?product_id=<?php echo $getProduct['product_id']; ?>&productDelete=ok"><button class="btn btn-danger btn-xs">Sil</button></a></center></td>
