@@ -26,6 +26,7 @@
 					<th>Ürün Kodu</th>
 					<th>Adet</th>
 					<th>Toplam Fiyat</th>
+					<th></th>
 					</tr>
 				</thead>
 				<tbody>
@@ -59,6 +60,8 @@
 						<td><?php echo $getProduct['product_id'] ?></td>
 						<td><form><input type="text" class="form-control quantity" value="<?php echo $getCart['product_piece'] ?>"></form></td>
 						<td><?php echo $getProduct['product_price'] ?></td>
+
+						    <td><center><a href="admin/operation/operation.php?cart_id=<?php echo $getCart['cart_id']; ?>&productCartDelete=ok"><button class="btn btn-danger btn-xs">X</button></a></center></td>
 					</tr>
 					   <?php } ?>
 				

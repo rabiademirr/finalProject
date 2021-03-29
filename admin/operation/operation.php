@@ -1433,6 +1433,23 @@ if ($_GET['slider_status']=="ok") {
 
 }
 
+if ($_GET['productCartDelete']=="ok") {
+  
+  $delete=$db->prepare("DELETE from cart where cart_id=:cart_id");
+  $check=$delete->execute(array(
+    'cart_id' => $_GET['cart_id']
+    ));
+
+  if ($check) {
+
+    Header("Location:../../cart.php?status=ok");
+
+  } else {
+
+    Header("Location:../../cart.php?status=no");
+  }
+
+}
 
 
 
