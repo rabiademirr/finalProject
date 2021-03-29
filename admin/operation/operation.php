@@ -544,13 +544,15 @@ if (isset($_POST['sliderAdd'])) {
     slider_name=:slider_name,
     slider_order=:slider_order,
     slider_link=:slider_link,
-    slider_imgpath=:slider_imgpath
+    slider_imgpath=:slider_imgpath,
+    slider_description=:slider_description
     ");
   $insert=$save->execute(array(
     'slider_name' => $_POST['slider_name'],
     'slider_order' => $_POST['slider_order'],
     'slider_link' => $_POST['slider_link'],
-    'slider_imgpath' => $refimgpath
+    'slider_imgpath' => $refimgpath,
+    'slider_description'=>$_POST['slider_description']
     ));
 
   if ($insert) {
