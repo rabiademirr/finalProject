@@ -38,6 +38,7 @@ include 'header.php';
                 <tr>
                   <th>S.No</th>
                   <th>Sipariş Zaman</th>
+                   <th>Sipariş ID</th>
                   <th>Kullanıcı ID</th>
                    <th>Sipariş Toplam Fiyat</th>
                   <th>Sipariş Tip</th>
@@ -60,6 +61,7 @@ include 'header.php';
                 <tr>
                   <td width="5"><?php echo $no;; ?></td>
                   <td><?php echo $getOrder['order_time'] ?></td>
+                   <td> <?php echo $getOrder['order_id'] ?></td>
                   <td> <?php echo $getOrder['user_id'] ?></td>
                    <td><?php echo $getOrder['order_total'] ?></td>
                     <td><?php echo $getOrder['order_type'] ?></td>
