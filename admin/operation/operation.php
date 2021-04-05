@@ -134,7 +134,7 @@ if (isset($_POST['userSave'])) {
         if ($insert) {
 
 
-          header("Location:../../index.php?status=successlogin");
+          header("Location:../../register.php?status=successfullrecord");
 
 
         } else {

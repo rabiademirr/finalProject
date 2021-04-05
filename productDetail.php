@@ -92,6 +92,8 @@ if ($_GET['statusc']=="ok") {?>
 							<div class="clearfix"></div>
 						<hr>
 
+                         <?php  
+                             if(isset($_SESSION['userUser_mail'])){ ?>
 
 						<form action="admin/operation/operation.php" method="POST">
 
@@ -114,6 +116,15 @@ if ($_GET['statusc']=="ok") {?>
 							</div>
 
 						</form>
+
+                             	<?php } else { ?>
+
+                                   <div class="alert alert-danger">
+					<strong></strong> Sipariş vermek için lütfen  giriş  yapın! 				</div>
+                             		 
+                         
+
+                            <?php }    ?>
 							
 						</div>
 					</div>

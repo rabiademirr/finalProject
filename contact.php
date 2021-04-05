@@ -1,6 +1,6 @@
 <?php include 'header.php' ?>
 
-<script type="text/javascript">
+<!--<script type="text/javascript">
 
   function checkForm(form)
   {
@@ -17,7 +17,7 @@
     return true;
   }
 
-</script>
+</script> -->
 
 <div class="container">
 	
@@ -67,7 +67,7 @@
 <div class="col-md-4 mx-auto">
 
 <div class="myform form">
-	<form action="sendMail.php"  method="POST" onsubmit="return checkForm(this);">
+	<form action="sendMail.php"  method="POST" >
 		
 		<div class="form-group">
 			<label for="name">Ad Soyad<span>*</span></label>
@@ -81,10 +81,10 @@
 			<label for="text">Mesajınız<span>*</span></label>
 			<textarea name="message" class="form-control" id="text"></textarea>
 		</div>
-		<div class="form-group">
+	<!--	<div class="form-group">
 			<img src="captcha.php" width="120" height="30" border="1" alt="CAPTCHA"> 
-			<input type="text" size="15" maxlength="5" name="captcha" value="">
-		</div>
+			<input type="text" size="5" maxlength="5" name="captcha" value="">
+		</div>-->
 		
 
 

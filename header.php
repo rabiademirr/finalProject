@@ -244,8 +244,9 @@ $getUser=$askUser->fetch(PDO::FETCH_ASSOC);
 
 									<!--	<td><a href=""><i class="fa fa-times-circle fa-2x"></i></a></td>-->
 									  <td><center><a href="admin/operation/operation.php?cart_id=<?php echo $getCart['cart_id']; ?>&productCartDelete=ok">
-									  	
-									  	<button class="btn btn-danger btn-xs">X</button></a></center></td>
+
+									  	<button class="btn btn-danger btn-xs">X</button>
+									  </a></center></td>
                                 	
 
 

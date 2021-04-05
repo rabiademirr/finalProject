@@ -1,7 +1,11 @@
 <?php include 'header.php'; 
 error_reporting(0);
 
+
+
 ?>
+
+
 
 <div class="container">
 	<div class="row">
@@ -53,8 +57,14 @@ error_reporting(0);
 					<strong>Hata!</strong> Kayıt Yapılamadı Sistem Yöneticisine Danışınız.
 				</div>
 					
-				<?php }
+				<?php }elseif ($_GET['status']=="successfullrecord") {?>
+
+				<div class="alert alert-success">
+					<strong></strong> Başarıyla Kaydoldunuz..
+				</div>
+			<?php }
 				 ?>
+
 
 
 				
