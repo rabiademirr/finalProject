@@ -25,6 +25,13 @@ if ($_GET['status']=="ok") {?>
 </script>
 
 <?php }
+if ($_GET['statusc']=="ok") {?>
+
+<script type="text/javascript">
+	alert("Ürün Başarıyla Sepete Eklendi");
+</script>
+
+<?php }
 ?>
 
 
@@ -97,6 +104,10 @@ if ($_GET['status']=="ok") {?>
 
 								<input type="hidden" name="product_id" value="<?php echo $getProduct['product_id'] ?>">
 								<div class="col-sm-4">
+
+                                 <input type="hidden" name="available_urlc" value="<?php echo 'http://'.$_SERVER['SERVER_NAME'].":8080".$_SERVER['REQUEST_URI']; ?>">
+
+
 									<button type="submit" name="addToCart" class="btn btn-default btn-success btn-sm"><span class="addchart">Sepete Ekle</span></button>
 								</div>
 								<div class="clearfix"></div>

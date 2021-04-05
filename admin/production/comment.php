@@ -40,10 +40,7 @@ $askComment->execute();
 
             <div class="clearfix"></div>
 
-            <div align="right">
-              <a href="commentAdd.php"><button class="btn btn-success btn-xs"> Yeni Ekle</button></a>
-
-            </div>
+            
           </div>
           <div class="x_content">
 

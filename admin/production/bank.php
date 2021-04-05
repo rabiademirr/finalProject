@@ -55,7 +55,6 @@ $askBank->execute(array());
                   <th>Banka Ad</th>
                   <th>Banka IBAN</th>
                    <th>Banka Hesap Adı</th>
-                  <th>Banka Durum</th>
                   <th></th>
                   <th></th>
                 </tr>
@@ -75,7 +74,7 @@ $askBank->execute(array());
                    <td><?php echo $getBank['bank_iban'] ?></td>
                     <td><?php echo $getBank['bank_accountname'] ?></td>
                
-                 <td><center><?php 
+              <!--   <td><center><?php 
 
                   if ($getBank['bank_status']==1) {?>
 
@@ -92,7 +91,7 @@ $askBank->execute(array());
               </center>
 
 
-            </td>
+            </td>-->
 
                   <td><center>
                     <a href="bankEdit.php?bank_id=<?php echo $getBank['bank_id']; ?>"><button class="btn btn-primary btn-xs">Düzenle</button></a></center></td>

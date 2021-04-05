@@ -204,8 +204,12 @@ $getUser=$askUser->fetch(PDO::FETCH_ASSOC);
     </div>
 </div>
 <div class="col-md-2 machart">
+	
 						<button id="popcart" class="btn btn-default btn-chart btn-sm "><span class="mychart">Sepetim</span>|<span class="allprice"><?php  echo $total_price; ?> TL</span></button>
+						
+
 						<div class="popcart">
+
 							<table class="table table-condensed popcart-inner">
 								<tbody>
 									<?php 
@@ -228,6 +232,7 @@ $getUser=$askUser->fetch(PDO::FETCH_ASSOC);
 
 					
 					?>
+                        
 
 									<tr>
 										<td>
@@ -236,8 +241,14 @@ $getUser=$askUser->fetch(PDO::FETCH_ASSOC);
 										<td><a href="product.htm"><?php echo $getProduct['product_name']; ?></a><br><span>Color: green</span></td>
 										<td><?php echo $getCart['product_piece']; ?>X</td>
 										<td><?php echo $getProduct['product_price']; ?> TL</td>
+
 									<!--	<td><a href=""><i class="fa fa-times-circle fa-2x"></i></a></td>-->
-									  <td><center><a href="admin/operation/operation.php?cart_id=<?php echo $getCart['cart_id']; ?>&productCartDelete=ok"><button class="btn btn-danger btn-xs">X</button></a></center></td>
+									  <td><center><a href="admin/operation/operation.php?cart_id=<?php echo $getCart['cart_id']; ?>&productCartDelete=ok">
+									  	
+									  	<button class="btn btn-danger btn-xs">X</button></a></center></td>
+                                	
+
+
 									</tr>
 								<?php } ?>
 									

@@ -1074,6 +1074,8 @@ if ($_GET['deleteComment']=="ok") {
 
 if (isset($_POST['addToCart'])) {
 
+    $available_urlc=$_POST['available_urlc'];
+
 
   $addCart=$db->prepare("INSERT INTO cart SET
     product_piece=:product_piece,
@@ -1092,14 +1094,17 @@ if (isset($_POST['addToCart'])) {
 
   if ($insert) {
 
-    Header("Location:../../cart?status=ok");
+    Header("Location:$available_urlc?statusc=ok");
 
   } else {
 
-    Header("Location:../../cart?status=no");
+    Header("Location:$available_urlc?statusc=no");
   }
 
 }
+
+
+
 if (isset($_POST['bankAdd'])) {
 
   $add=$db->prepare("INSERT INTO bank SET
@@ -1436,6 +1441,9 @@ if ($_GET['slider_status']=="ok") {
 }
 
 if ($_GET['productCartDelete']=="ok") {
+
+
+  
   
   $delete=$db->prepare("DELETE from cart where cart_id=:cart_id");
   $check=$delete->execute(array(

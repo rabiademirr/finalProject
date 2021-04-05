@@ -78,7 +78,7 @@
 				<div class="total">Toplam Fiyat : <span class="bigprice"><?php echo $total_price ?> TL</span></div>
 				<div class="clearfix"></div>
 
-				 <a type="submit"  href="index.php" class="btn btn-warning">Alışverişe Devam Et</a><br><br>
+				 <a type="submit"  href="categories" class="btn btn-warning">Alışverişe Devam Et</a><br><br>
                         
 				<a href="payment" class="btn btn-default btn-success">Sepeti Onayla</a> 
 			</div>
