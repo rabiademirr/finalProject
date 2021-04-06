@@ -783,7 +783,7 @@ if ($_GET['productDelete']=="ok") {
 
 }
 
-/*if (isset($_POST['productEdit'])) {
+if (isset($_POST['productEdit'])) {
 
   $product_id=$_POST['product_id'];
   $product_seourl=seo($_POST['product_name']);
@@ -823,9 +823,9 @@ if ($_GET['productDelete']=="ok") {
     Header("Location:../production/productEdit.php?status=no&product_id=$product_id");
   }
 
-}*/
+}
 
-if (isset($_POST['productEdit'])) {
+/*if (isset($_POST['productEdit'])) {
 
 
   
@@ -935,7 +935,7 @@ if (isset($_POST['productEdit'])) {
 }
 
 
-
+*/
 
 
 
@@ -1489,6 +1489,7 @@ if ($_GET['product_standout']=="ok") {
   }
 
 }
+
 
 
 

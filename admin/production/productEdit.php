@@ -38,7 +38,7 @@ $getProduct=$askProduct->fetch(PDO::FETCH_ASSOC);
                     <form action="../operation/operation.php" method="POST" enctype="multipart/form-data" id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
                 
 
-                        <div class="form-group">
+                  <!--      <div class="form-group">
                 <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Mevcut Resim <span class="required">*</span>
                 </label>
                 <div class="col-md-6 col-sm-6 col-xs-12">
@@ -52,7 +52,8 @@ $getProduct=$askProduct->fetch(PDO::FETCH_ASSOC);
                 <div class="col-md-6 col-sm-6 col-xs-12">
                   <input type="file" id="first-name"  name="product_imgpath"  class="form-control col-md-7 col-xs-12">
                 </div>
-              </div>
+              </div>-->
+              
 
 
 
